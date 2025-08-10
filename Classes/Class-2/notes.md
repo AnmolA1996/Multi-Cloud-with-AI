@@ -56,3 +56,71 @@
 * **Database Layer:** Azure SQL Database
 
 ---
+
+
+Chalo Anmol, is diagram ko **short & simple Hinglish** mein samjh lete hain:
+
+---
+
+## **Kaam Karne Ke Tareeke – Cloud Mein**
+
+Cloud mein kaam 2 tareeke se hota hai:
+
+### **1. Manual / Portal Method**
+
+* Tum **cloud portal** (Azure, AWS, GCP ka website dashboard) open karke click-click karke kaam karte ho.
+* Example: Azure Portal mein jaake VM create karna.
+* **Cons:** Time consuming, human error ka chance zyada, repeat karna mushkil.
+
+---
+
+### **2. Automation Method**
+
+Automation matlab code/commands se kaam karna. Iske 2 major style hote hain:
+
+#### **A. Imperative Method**
+
+* Tum **step-by-step command dete ho** ki kya karna hai.
+* Tum control mein ho — “pehle yeh karo, phir yeh karo”.
+* Tools:
+
+  * **Azure:** Azure CLI, PowerShell
+  * **AWS:** aws cli, Python SDK
+  * **GCP:** gcloud SDK
+* Example:
+
+  ```bash
+  az vm create --name testVM --image UbuntuLTS
+  ```
+
+---
+
+#### **B. Declarative Method**
+
+* Tum **bas final result batate ho** ki chahiye kya, kaise banana hai wo tool decide karega.
+* Example: “Mujhe ek VM chahiye with 2 CPU, 4GB RAM” — kaise steps execute honge wo code manage karega.
+
+**2 Type ke tools yahan hote hain:**
+
+1. **Cloud Native Tools** (Har cloud ka apna)
+
+   * Azure → ARM Template, Bicep
+   * AWS → CloudFormation
+   * GCP → Deployment Manager
+
+2. **Open Source Tools** (Multi-cloud ke liye)
+
+   * **Terraform** → Ek hi code se Azure, AWS, GCP sab pe deploy kar sakte ho.
+
+---
+
+💡 **Short Difference:**
+
+* **Imperative** = Tum steps dictate karte ho (jaise recipe batana).
+* **Declarative** = Tum final dish bolte ho, chef decide kare steps (jaise restaurant mein order dena).
+
+---
+
+Agar tum chaho to mai iska **ek page ka simplified colourful PDF** bana du jo tumhare cloud automation notes ka part ban sake.
+Isme step-by-step + diagram ka short version dal dunga.
+
